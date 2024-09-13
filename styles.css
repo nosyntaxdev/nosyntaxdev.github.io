@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-white: white;
+    color: black;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    padding: 2rem;
+}
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #F6C492;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #F6C492;
+}
+
+::-moz-selection {
+  background-color: #F6C492;
+  color: black;
+}
+
+::selection {
+  background-color: #F6C492;
+  color: black;
+}
+
+@media (max-width: 600px) {
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .social-links a {
+        font-size: 1.2rem;
+    }
+}
